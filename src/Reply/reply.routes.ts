@@ -43,7 +43,6 @@ replyRouter.post("/", async (req, res) => {
             });
         }
     } catch (error) {
-        alert(error);
         res.status(400).send({
             success: false,
             message: error instanceof Error ? error.message : t.badRequest,
